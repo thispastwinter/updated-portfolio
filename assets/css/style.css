@@ -64,4 +64,26 @@ a:hover {
   background-color: grey;
   color: white;
   padding: 10px;
-} 
+}
+
+@media only screen and (max-width: 600px) {
+  .nav #banner-text {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 25px;
+  }
+
+  navbar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+    font-family: 'Raleway', serif;
+    font-size: 15px;
+  }
+}
