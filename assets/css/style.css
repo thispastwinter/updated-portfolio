@@ -7,7 +7,7 @@ body {
   padding: 0 !important;
 }
 
-.nav {
+.header {
   background: url(../images/bio-banner.png);
   background-repeat: no-repeat;
   background-size: auto;
@@ -16,7 +16,7 @@ body {
   border-bottom: 5px grey solid;
 }
 
-.nav #banner-text {
+#banner-text {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
@@ -67,12 +67,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .nav #banner-text {
+ #banner-text {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     font-family: 'Bungee Shade', cursive;
-    font-size: 25px;
+    font-size: 50px;
     padding: 0 !important;
   }
 
@@ -82,7 +82,7 @@ a:hover {
     justify-content: center;
     list-style: none;
     font-family: 'Raleway', serif;
-    font-size: 15px;
+    font-size: 20px;
     padding: 5px !important;
   }
 }
