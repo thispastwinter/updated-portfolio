@@ -1,7 +1,13 @@
+body {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.row .col {
+  padding: 0 !important;
+}
+
 .nav {
-  align-items: flex-end;
-  display: flex;
-  justify-content: center;
   background: url(../images/bio-banner.png);
   background-repeat: no-repeat;
   background-size: auto;
@@ -11,11 +17,21 @@
 }
 
 .nav #banner-text {
+  margin-left: 20px;
   display: flex;
+  flex-direction: column;
   align-self: flex-start;
   justify-content: center;
   font-family: 'Bungee Shade', cursive;
   font-size: 60px;
+}
+
+#first-name p {
+  color: brown;
+}
+
+#last-name p {
+  color: lightseagreen;
 }
 
 navbar {
@@ -33,17 +49,19 @@ navbar li {
 }
 
 a {
-  color: white !important;
-}
-
-a:hover {
   color: lightseagreen !important;
 }
 
-.main-content {
+a:hover {
+  color: lightsalmon !important;
+}
+
+.main-content p {
   font-family: 'Raleway', serif;
 }
 
 .main-content h1 {
-  color: lightseagreen;
-}
+  background-color: grey;
+  color: white;
+  padding: 10px;
+} 
