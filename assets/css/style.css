@@ -73,6 +73,7 @@ a:hover {
     flex-direction: column;
     font-family: 'Bungee Shade', cursive;
     font-size: 25px;
+    padding: 0 !important;
   }
 
   navbar li {
@@ -82,5 +83,6 @@ a:hover {
     list-style: none;
     font-family: 'Raleway', serif;
     font-size: 15px;
+    padding: 5px !important;
   }
 }
