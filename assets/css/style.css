@@ -87,6 +87,15 @@ a:hover {
   background-size: cover;
 }
 
+.contact-img {
+  width: 100%;
+  height: auto;
+}
+
+form {
+  margin: 30px !important;
+}
+
 @media only screen and (max-width: 600px) {
   #banner-text {
     margin-left: 20px;
@@ -107,3 +116,4 @@ a:hover {
     padding: 5px !important;
   }
 }
+

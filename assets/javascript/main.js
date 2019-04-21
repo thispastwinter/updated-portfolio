@@ -1,8 +1,10 @@
- $(document).ready(function () {
-   $('.carousel').carousel();
- });
+//Initialize Materialize Carousel 
 
- $('.carousel.carousel-slider').carousel({
-   fullWidth: true,
-   indicators: true
- });
+$(document).ready(function () {
+  $('.carousel').carousel();
+  $('.modal').modal();
+});
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true,
+  indicators: true
+});
