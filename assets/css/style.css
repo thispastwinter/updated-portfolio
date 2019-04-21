@@ -66,8 +66,29 @@ a:hover {
   padding: 10px;
 }
 
+.main-content h2 {
+  background-color: lightseagreen;
+  color: white;
+  padding: 10px;
+}
+
+.c1 {
+  background: url(../images/dnd.jpg);
+  background-size: cover;
+}
+
+.c2 {
+  background: url(../images/blueline.jpg);
+  background-size: cover;
+}
+
+.c3 {
+  background: url(../images/thenational.jpeg);
+  background-size: cover;
+}
+
 @media only screen and (max-width: 600px) {
- #banner-text {
+  #banner-text {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
