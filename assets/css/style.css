@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto !important;
+  margin: 0 auto;
   max-width: 960px;
 }
 
@@ -22,6 +22,18 @@ body {
   font-size: 60px;
 }
 
+@keyframes header {
+  from {color: lightgreen;}
+  to {color: lightseagreen;}
+  to {color: lightcoral;}
+}
+
+#first-name, #last-name p {
+  animation-name: header;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
 #first-name, #last-name p {
   color: lightcoral;
 }
@@ -29,7 +41,6 @@ body {
 .social {
   font-size: 3em;
 }
-
 
 navbar {
   display: flex;
@@ -93,12 +104,14 @@ navbar li {
   margin: 30px;
 }
 
+@media only screen and (min-width: 901px) {
+  .bio-mobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   #banner-text {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Bungee Shade', cursive;
     font-size: 50px;
     padding: 0;
   }
@@ -107,10 +120,20 @@ navbar li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    list-style: none;
-    font-family: 'Raleway', serif;
     font-size: 20px;
     padding: 5px;
+  }
+
+  .social {
+    margin-top: 70px;
+  }
+
+  .bio {
+    display: none;
+  }
+
+  .bio-mobile {
+    display: show;
   }
 }
 
