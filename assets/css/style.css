@@ -23,8 +23,7 @@ body {
 }
 
 @keyframes header {
-  from {color: lightgreen;}
-  to {color: lightseagreen;}
+  from {color: lightseagreen;}
   to {color: lightcoral;}
 }
 
@@ -75,7 +74,7 @@ navbar li {
 }
 
 .main-content h2 {
-  background-color: lightseagreen;
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   padding: 10px;
 }
