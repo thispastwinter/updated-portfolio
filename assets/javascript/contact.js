@@ -21,15 +21,6 @@ let message = "";
 $("#submit").on("click", function () {
   event.preventDefault();
 
-  // Function that both shows a modal and hides it once 'Okay' is selected
-
-  function modalTrigger() {
-    $('.modal').modal('show');
-    $('.okay').on("click", function () {
-      $('.modal').modal('hide');
-    })
-  }
-
   // Takes the value of each input and assigns it to each variable
 
   name = $('#first_name').val().trim();

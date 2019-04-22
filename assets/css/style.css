@@ -3,10 +3,6 @@ body {
   max-width: 960px;
 }
 
-.row .col {
-  padding: 0 !important;
-}
-
 .header {
   background: url(../images/bio-banner.png);
   background-repeat: no-repeat;
@@ -26,13 +22,14 @@ body {
   font-size: 60px;
 }
 
-#first-name p {
-  color: brown;
+#first-name, #last-name p {
+  color: lightcoral;
 }
 
-#last-name p {
-  color: lightseagreen;
+.social {
+  font-size: 3em;
 }
+
 
 navbar {
   display: flex;
@@ -43,24 +40,24 @@ navbar {
 navbar li {
   display: inline;
   list-style: none;
-  padding: 35px;
+  padding: 20px;
   font-family: 'Raleway', serif;
   font-size: 20px;
 }
 
-a {
-  color: lightseagreen !important;
+.nav-link {
+  color: lightseagreen;
 }
 
-a:hover {
-  color: lightsalmon !important;
+.nav-link:hover {
+  color: lightcoral;
 }
 
 .main-content p {
   font-family: 'Raleway', serif;
 }
 
-.main-content h1 {
+.main-content h3 {
   background-color: grey;
   color: white;
   padding: 10px;
@@ -92,18 +89,18 @@ a:hover {
   height: auto;
 }
 
-form {
-  margin: 30px !important;
+#contact-form {
+  margin: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   #banner-text {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     font-family: 'Bungee Shade', cursive;
     font-size: 50px;
-    padding: 0 !important;
+    padding: 0;
   }
 
   navbar li {
@@ -113,7 +110,7 @@ form {
     list-style: none;
     font-family: 'Raleway', serif;
     font-size: 20px;
-    padding: 5px !important;
+    padding: 5px;
   }
 }
 
