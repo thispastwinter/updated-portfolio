@@ -1,2 +1,3 @@
-# updated-portfolio
-Employer Ready Portfolio
+# Portfolio
+
+This is my ever changing, ever evolving portfolio. 
