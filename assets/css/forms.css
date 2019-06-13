@@ -11,6 +11,7 @@
   border-right: 0px;
   border-left: 0px;
   border-bottom: 1.5px solid gray;
+  border-radius: 0;
 }
 
 .input-md {
