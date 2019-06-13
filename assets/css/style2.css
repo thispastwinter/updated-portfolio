@@ -142,6 +142,9 @@ navbar li {
     margin: 0 auto;
     width: 100%;
   }
+  .nav-links {
+    top: 50px;
+  }
   .mobile-div {
     display: block;
   }
