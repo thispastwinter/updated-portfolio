@@ -25,12 +25,13 @@ body {
   /* background-color: rgba(158, 158, 158, 0.3); */
 }
 
-.nav-links p {
+.nav-links {
   padding: 20px;
   display: inline;
   position: relative;
   font-size: 35px;
   text-transform: uppercase;
+  text-decoration: none;
   color: white;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
@@ -44,9 +45,22 @@ body {
   height: 500px;
 }
 
+.divider {
+  border: 2px black solid;
+}
+
+.important {
+  background-color: rgba(158, 158, 158, 0.3);
+}
+
+.indent-text {
+  text-indent: 35px;
+}
+
 #bio-pic {
   width: 450px;
   height: auto;
+  border: 2px solid gray;
 }
 
 #banner-text {
@@ -79,6 +93,10 @@ navbar li {
   text-align: center;
 }
 
+.uppercase-text {
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 701px) {
   .bio-mobile {
     display: none;
@@ -91,7 +109,7 @@ navbar li {
     padding: 0;
   }
 
-  .nav-links p {
+  .nav-links {
     font-size: 20px;
     padding: 5px;
   }
