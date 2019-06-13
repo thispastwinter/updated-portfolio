@@ -1,97 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --grid-gutter: 20px;
-}
-
 body {
   max-width: 960px;
   margin: 0 auto;
 }
 
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc(var(--grid-gutter) * .25);
-  margin-left: calc(var(--grid-gutter) * .25);
-}
-
-.grid-center {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc(var(--grid-gutter) * 1);
-  margin-left: calc(var(--grid-gutter) * 1);
-}
-
-.grid-cell-lg {
-  width: 100%;
-  margin-bottom: var(--grid-gutter);
-  padding-right: var(--grid-gutter);
-  padding-left: var(--grid-gutter);
-}
-
-.grid-cell-sm {
-  width: 25%;
-}
-
-.grid-cell-md {
-  width: 50%
-}
-
-.grid-cell-sm,
-.grid-cell-md,
-.grid-cell-lg {
-  font-family: 'Roboto';
-}
-
-.is-spaced {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.is-centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.centered-item {
-  max-width: 50%;
-}
-
 @keyframes fadein {
   from {
-    border-color: rgba(158, 158, 158, 0.3)
+    border-color: rgba(158, 158, 158, 0.3);
+    background-color: none;
   }
   to {
-    border-color: rgb(255, 255, 255)
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(158, 158, 158, 0.3);
   }
 }
 
 .link:hover {
-  animation: 1s;
+  animation: 2s;
   animation-name: fadein;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+  /* background-color: rgba(158, 158, 158, 0.3); */
 }
 
 .nav-links p {
-  padding: 10px;
+  padding: 20px;
   display: inline;
   position: relative;
   font-size: 35px;
   text-transform: uppercase;
   color: white;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .header {
@@ -100,11 +42,6 @@ body {
   background-size: cover;
   background-position: bottom;
   height: 500px;
-}
-
-.card {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  border-radius: 5px;
 }
 
 #bio-pic {
@@ -126,41 +63,6 @@ body {
   font-size: 3em;
 }
 
-.button {
-  width: 100px;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: 'Roboto';
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  background-color: rgb(56, 116, 228);
-  box-shadow: 0 2.5px 2.5px rgba(0,0,0,0.19), 0 1.5px 1.5px rgba(0,0,0,0.23);
-}
-
-.button:hover {
-  padding: 10px;
-  border-radius: 5px;
-  font-family: 'Roboto';
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  background-color: rgb(73, 129, 233);
-  box-shadow: 0 2.5px 2.5px rgba(0,0,0,0.19), 0 1.5px 1.5px rgba(0,0,0,0.23);
-}
-
-.button:active {
-  padding: 10px;
-  border-radius: 5px;
-  font-family: 'Roboto';
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  background-color: rgb(73, 129, 233);
-  box-shadow: none;
-}
-
 navbar {
   display: none;
 }
@@ -173,53 +75,8 @@ navbar li {
   font-size: 20px;
 }
 
-.nav-link {
-  color: lightseagreen;
-}
-
-.nav-link:hover {
-  color: lightcoral;
-}
-
-.main-content p {
-  font-family: 'Raleway', serif;
-}
-
-.main-content h3 {
-  background-color: grey;
-  color: white;
-  padding: 10px;
-  border-radius: 2px;
-}
-
-.main-content h2 {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  padding: 10px;
-}
-
-.c1 {
-  background: url(../images/dnd.jpg);
-  background-size: cover;
-}
-
-.c2 {
-  background: url(../images/blueline.jpg);
-  background-size: cover;
-}
-
-.c3 {
-  background: url(../images/thenational.jpeg);
-  background-size: cover;
-}
-
-.contact-img {
-  width: 100%;
-  height: auto;
-}
-
-#contact-form {
-  margin: 30px;
+.centered-text {
+  text-align: center;
 }
 
 @media only screen and (min-width: 701px) {
@@ -229,14 +86,6 @@ navbar li {
 }
 
 @media only screen and (max-width: 700px) {
-  .grid-cell-sm {
-    width: 100%;
-  }
-
-  .grid-cell-md {
-    width: 100%
-  }
-
   #banner-text {
     font-size: 50px;
     padding: 0;
