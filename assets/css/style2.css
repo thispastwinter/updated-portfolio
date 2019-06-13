@@ -148,6 +148,10 @@ navbar li {
   .nav-links {
     font-size: 20px;
   }
+  .nav-links:active {
+    border: 0;
+    background-color: transparent;
+  }
   .desktop-nav {
     display: none;
   }
