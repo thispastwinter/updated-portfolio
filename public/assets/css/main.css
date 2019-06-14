@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+font-family: 'Bungee-Shade';
+src: url('../fonts/Bungee-Shade.otf');
+}
 
 body {
   max-width: 960px;
@@ -74,10 +78,6 @@ body {
   font-size: 1.25em;
 }
 
-.footer {
-  font-family: 'Bungee Shade';
-}
-
 .no-list-style {
   list-style: none;
 }
@@ -88,7 +88,7 @@ body {
 }
 
 #banner-text {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee-Shade';
   font-size: 60px;
 }
 

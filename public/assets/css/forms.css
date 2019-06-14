@@ -16,11 +16,29 @@
 }
 
 .input-md {
+  height: 40px;  
   width: 50%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
 }
 
 .input-sm {
+  height: 40px;  
   width: 25%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
 }
 
 .input-lg:focus {
