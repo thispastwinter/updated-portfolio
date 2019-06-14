@@ -4,6 +4,7 @@ const path = require('path');
 const helmet = require('helmet');
 const morgan = require('morgan');
 
+
 app.use(helmet());
 app.use(morgan((tokens, req, res) => [
   tokens.method(req, res),
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 require('./routes/htmlRoutes')(app);
+require('./routes/nodemailerRoutes')(app);
 
 const PORT =  process.env.PORT || 8080
 

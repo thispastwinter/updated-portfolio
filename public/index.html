@@ -110,19 +110,21 @@
       <br>
       <h3 class="centered-text important">Drop me a line and let's create something together!</h3>
       <br>
-      <div class="input">
-        <input class="input-lg" type="text" placeholder="Name">
-      </div>
-      <div class="input">
-        <input class="input-lg" type="text" placeholder="Email">
-      </div>
-      <div class="input">
-        <input class="input-lg" type="text" placeholder="Message">
-      </div>
-      <br>
-      <div class="grid is-centered">
-        <a href="" class="button">Submit</a>
-      </div>
+      <form action="/" method="POST" role="form">
+        <div class="input">
+          <input class="input-lg" type="text" placeholder="Name" name="name">
+        </div>
+        <div class="input">
+          <input class="input-lg" type="text" placeholder="Email" name="email">
+        </div>
+        <div class="input">
+          <input class="input-lg" type="text" placeholder="Message" name="message">
+        </div>
+        <br>
+        <div class="grid is-centered">
+          <button type="submit" class="button">Submit</button>
+        </div>
+      </form>
     </div>
   </div>
   <!--Custom Javascript-->
