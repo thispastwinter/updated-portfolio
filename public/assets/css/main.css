@@ -76,6 +76,10 @@ body {
   border: 2px black solid;
 }
 
+.bottom-margin {
+  margin-bottom: 20px;
+}
+
 .important {
   color: gray;
 }

@@ -18,7 +18,7 @@
 <body>
   <div id="modal" class="grid">
     <div id="modal-close" type="button">
-        <i class="fas fa-times"></i>
+      <i class="fas fa-times"></i>
     </div>
     <div class="modal-content grid-cell-lg centered-text card">
       <h1 id="pass-or-fail"></h1>
@@ -45,11 +45,10 @@
   <div class="grid">
     <div class="grid-cell-md">
       <h1 class="uppercase-text">Who Am I?</h1>
-      <br>
-      <hr class="divider">
-      <br>
-      <h3 class="centered-text important">A full-stack developer ready to make your vision come to life.</h3>
-      <br>
+      <hr class="divider bottom-margin">
+      <div class="bottom-margin">
+        <h3 class="centered-text important">A full-stack developer ready to make your vision come to life.</h3>
+      </div>
       <p class="indent-text important">I'm currently a student at the University of Kansas Edwards Campus. I'm studying
         full-stack
         web developement
@@ -85,24 +84,25 @@
       </div>
     </div>
   </div>
-  <div class="grid">
-    <div class="grid-cell-lg mobile-div is-centered">
+  <div class="grid mobile-div">
+    <div class="grid-cell-lg">
       <h1 class="uppercase-text" id="portfolio">Portfolio</h1>
-      <br>
       <hr class="divider">
-      <br>
+    </div>
+    <div class="grid-cell-lg">
       <h3 class="centered-text important">Current and Past Projects</h3>
-      <br>
+    </div>
+    <div class="grid-cell-lg">
       <ul class="no-list-style important centered-text">
-        <li>BJ's Tattoo Haven</li>
-        <br>
-        <li>Batch Calculator</li>
-        <br>
-        <li>Whitney Klaas Portfolio</li>
+        <p>BJ's Tattoo Haven</p>
+        <p>Batch Calculator</p>
+        <p>Whitney Klaas Portfolio</p>
       </ul>
-      <br>
+    </div>
+    <div class="grid-cell-lg">
       <h4 class="important centered-text">Technologies in which I am proficient:</h4>
-      <br>
+    </div>
+    <div class="grid-cell-lg">
       <ul class="no-list-style important centered-text">
         <li><i class="fab fa-js-square"></i> Javascript</li>
         <li><i class="fab fa-node-js"></i></i> Node</li>
@@ -111,28 +111,28 @@
       </ul>
     </div>
   </div>
-  <div class="grid">
-    <div class="grid-cell-lg mobile-div">
+  <div class="grid mobile-div">
+    <div class="grid-cell-lg">
       <h1 class="uppercase-text" id="contact">Contact</h1>
-      <br>
       <hr class="divider">
-      <br>
+    </div>
+    <div class="grid-cell-lg">
       <h3 class="centered-text important">Drop me a line and let's create something together!</h3>
+    </div>
+    <div class="grid-cell-lg">
+      <div class="input">
+        <input class="input-lg" type="text" placeholder="Name" id="name">
+      </div>
+      <div class="input">
+        <input class="input-lg" type="email" placeholder="Email" id="email">
+      </div>
+      <div class="input">
+        <input class="input-lg" type="text" placeholder="Message" id="message">
+      </div>
       <br>
-     
-        <div class="input">
-          <input class="input-lg" type="text" placeholder="Name" id="name">
-        </div>
-        <div class="input">
-          <input class="input-lg" type="email" placeholder="Email" id="email">
-        </div>
-        <div class="input">
-          <input class="input-lg" type="text" placeholder="Message" id="message">
-        </div>
-        <br>
-        <div class="grid is-centered">
-          <a class="button submit">Submit</a>
-        </div>
+      <div class="grid is-centered">
+        <a class="button submit">Submit</a>
+      </div>
     </div>
   </div>
   <!--Custom Javascript-->
