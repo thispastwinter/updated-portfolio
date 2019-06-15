@@ -16,6 +16,11 @@
 </head>
 
 <body>
+  <div id="modal" class="grid">
+    <div class="modal-content grid-cell-lg centered-text card">
+      <p id="info"></p>
+    </div>
+  </div>
   <div class="grid is-centered">
     <div class="grid-cell-lg header card">
       <div id="banner-text">
@@ -110,25 +115,26 @@
       <br>
       <h3 class="centered-text important">Drop me a line and let's create something together!</h3>
       <br>
-      <form action="/" method="POST" role="form">
+     
         <div class="input">
-          <input class="input-lg" type="text" placeholder="Name" name="name">
+          <input class="input-lg" type="text" placeholder="Name" id="name">
         </div>
         <div class="input">
-          <input class="input-lg" type="text" placeholder="Email" name="email">
+          <input class="input-lg" type="text" placeholder="Email" id="email">
         </div>
         <div class="input">
-          <input class="input-lg" type="text" placeholder="Message" name="message">
+          <input class="input-lg" type="text" placeholder="Message" id="message">
         </div>
         <br>
         <div class="grid is-centered">
-          <button type="submit" class="button">Submit</button>
+          <a class="button submit">Submit</a>
         </div>
-      </form>
     </div>
   </div>
   <!--Custom Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./assets/javascript/main.js"></script>
+  <script src="./assets/javascript/contact.js"></script>
 </body>
 
 </html>

@@ -1,52 +1,32 @@
-// Initialize Firebase
-
-const config = {
-  apiKey: "AIzaSyCAiSx8mj9229XZdCRM2crMG9koDwGDoIY",
-  authDomain: "contact-form-13f1d.firebaseapp.com",
-  databaseURL: "https://contact-form-13f1d.firebaseio.com",
-  projectId: "contact-form-13f1d",
-  storageBucket: "contact-form-13f1d.appspot.com",
-  messagingSenderId: "1067981632438"
-};
-firebase.initializeApp(config);
-
-const database = firebase.database();
-
-// Sets initial variables and their values
-
-let name = "";
-let email = "";
-let message = "";
-
-$("#submit").on("click", function () {
-  event.preventDefault();
-
-  // Takes the value of each input and assigns it to each variable
-
-  name = $('#first_name').val().trim();
-  email = $('#email').val().trim();
-  message = $('#textarea1').val().trim();
-
-  // If statment that triggers a modal when the user has not input any data
-
-  if (name === "" || email === "" || message === "") {
-    $('#modal2').modal('open');
-  } else {
-
-    // Creates an object and pushes the value to Firebase
-    // Triggers modal informing user that content has been submitted succesfully
-
-    $('#modal1').modal('open');
-    database.ref().push({
-      name: name,
-      email: email,
-      message: message,
-    });
-  }
-  // Clears each input field after the submit button is clicked
-
-  name = $('#first_name').val("");
-  email = $('#email').val("");
-  message = $('#textarea1').val("");
-
-});
+$('.submit').on('click', function () {
+  const name = $('#name').val();
+  const email = $('#email').val();
+  const message = $('#message').val();
+  console.log(name, email, message);
+  $.post('/', {
+    type: 'POST',
+    name: name,
+    email: email,
+    message: message
+  }).then(function (data) {
+    const modal = document.getElementById('modal');
+    const paragraph = document.getElementById('info');
+    if (data === 'success') {
+      modal.style.display = 'block';
+      paragraph.innerHTML = 'Your Message Has Been Sent!';
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    } else {
+      modal.style.display = 'block';
+      paragraph.innerHTML = 'We apologize, but your message can not be sent at this time!';
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
+  });
+})

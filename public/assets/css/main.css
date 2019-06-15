@@ -10,6 +10,26 @@ body {
   margin: 0 auto;
 }
 
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(158, 158, 158, 0.3);
+}
+
+.modal-content {
+  background-color: gray;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  color: white;
+}
+
 @keyframes fadein {
   from {
     border-color: rgba(158, 158, 158, 0.3);
