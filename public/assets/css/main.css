@@ -48,6 +48,10 @@ body {
   }
 }
 
+.button {
+  width: 100%;
+}
+
 .link:hover {
   animation: 1s;
   animation-name: fadein;
@@ -172,9 +176,6 @@ body {
   }
   .footer {
     display: none;
-  }
-  .button {
-    width: 100%;
   }
   #bio-pic {
     width: 100%;
