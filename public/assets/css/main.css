@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo&display=swap');
 @font-face {
 font-family: 'Bungee-Shade';
 src: url('../fonts/Bungee-Shade.otf');
@@ -126,6 +127,42 @@ body {
 #bio-pic {
   width: 450px;
   height: auto;
+}
+
+.contact-img {
+  background: url(../images/contactpic.jpg);
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#speech-bubble {
+  position: relative;
+  left: 150px;
+  top: 20px;
+  height: 200px;
+  width: 200px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#bubble-caption {
+  position: relative;
+  top: 15px;
+  left: 35px;
+  font-size: 8em;
+  color: white;
+}
+
+#bubble-text {
+  position: relative;
+  bottom: 120px;
+  left: 20px;
+  color: black;
+  font-family: 'Swanky and Moo Moo';
+  font-size: 16px;
+  z-index: 1;
 }
 
 #banner-text {
