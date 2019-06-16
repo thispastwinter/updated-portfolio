@@ -28,6 +28,8 @@ body {
   padding: 20px;
   width: 80%;
   color: white;
+  border-radius: 3px;
+  border: 2px rgb(100, 100, 100) solid;
 }
 
 #modal-close {
@@ -125,6 +127,7 @@ body {
 #banner-text {
   font-family: 'Bungee-Shade';
   font-size: 60px;
+  color: white;
 }
 
 .centered-text {
