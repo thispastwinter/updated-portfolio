@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!--Custom Stylesheet-->
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/cards.css">
+  <link rel="stylesheet" href="./assets/css/buttons.css">
+  <link rel="stylesheet" href="./assets/css/forms.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>About Me</title>
+</head>
+
+<body>
+  <div id="modal" class="grid">
+    <div id="modal-close" type="button">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="modal-content grid-cell-lg centered-text card">
+      <h1 id="pass-or-fail"></h1>
+      <p id="info"></p>
+    </div>
+  </div>
+  <div class="grid is-centered">
+    <div class="grid-cell-lg header card">
+      <div id="banner-text">
+        Justin Klaas
+      </div>
+      <div class="grid-cell-lg is-spaced desktop-nav">
+        <a class="nav-links link" href="/">Home</a>
+        <a class="nav-links link" href="/portfolio">Portfolio</a>
+        <a class="nav-links link" href="/contact">Contact</a>
+      </div>
+      <div class="grid-cell-lg is-spaced mobile-nav">
+        <a class="nav-links link" href="/">Home</a>
+        <a class="nav-links link" href="#portfolio">Portfolio</a>
+        <a class="nav-links link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="grid contact-desktop">
+    <div class="grid-cell-md is-centered contact-img">
+      <div id="speech-bubble">
+        <div id="bubble-caption">
+          <i class="fas fa-comment"></i>
+          <div id="bubble-text" class="text-is-strong">Thanks<br>for<br>considering me!</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-cell-md">
+      <h1 class="uppercase-text bottom-margin" id="contact">Contact</h1>
+      <hr class="divider bottom-margin">
+      <h3 class="centered-text important">Drop me a line and let's create something together!</h3>
+      <div class="input">
+        <input class="input-lg" type="text" placeholder="Name" id="name">
+      </div>
+      <div class="input">
+        <input class="input-lg" type="email" placeholder="Email" id="email">
+      </div>
+      <div class="input">
+        <input class="input-lg" type="text" placeholder="Message" id="message">
+      </div>
+      <br>
+      <div class="grid is-centered">
+        <a class="button submit">Submit</a>
+      </div>
+    </div>
+  </div>
+  <!--Custom Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./assets/javascript/main.js"></script>
+  <script src="./assets/javascript/contact.js"></script>
+</body>
+
+</html>

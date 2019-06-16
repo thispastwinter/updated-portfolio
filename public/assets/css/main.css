@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 @font-face {
 font-family: 'Bungee-Shade';
 src: url('../fonts/Bungee-Shade.otf');
@@ -138,10 +138,10 @@ body {
 
 #speech-bubble {
   position: relative;
-  left: 150px;
-  top: 20px;
-  height: 200px;
-  width: 200px;
+  left: 125px;
+  top: -25px;
+  height: 150px;
+  width: 150px;
   background-size: 200px;
   background-repeat: no-repeat;
   z-index: 1;
@@ -151,18 +151,20 @@ body {
   position: relative;
   top: 15px;
   left: 35px;
-  font-size: 8em;
+  font-size: 10em;
   color: white;
+  text-shadow: 2px 2px 8px black;
 }
 
 #bubble-text {
   position: relative;
-  bottom: 120px;
+  bottom: 140px;
   left: 20px;
   color: black;
-  font-family: 'Swanky and Moo Moo';
+  font-family: 'Permanent Marker';
   font-size: 16px;
   z-index: 1;
+  text-shadow: none;
 }
 
 #banner-text {
@@ -198,6 +200,9 @@ body {
   }
   #banner-text {
     font-size: 50px;
+  }
+  .contact-desktop {
+    height: 1200px;
   }
   .nav-links {
     font-size: 20px;
