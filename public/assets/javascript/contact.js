@@ -53,6 +53,6 @@ $('.submit').on('click', function () {
   }
 })
 
-$('#modal-close').on('click', function () {
+$('.modal-close').on('click', function () {
   modal.style.display = 'none';
 });
