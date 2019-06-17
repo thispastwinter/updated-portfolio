@@ -13,6 +13,8 @@
   border-bottom: 1.5px solid gray;
   border-radius: 0;
   background: transparent;
+  font-family: 'Roboto';
+  font-size: 14px;
 }
 
 .input-md {

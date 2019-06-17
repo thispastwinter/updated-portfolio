@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
 }
 
-#modal {
+#modal, #modal2 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -53,6 +53,18 @@ body {
   width: 100%;
 }
 
+.is-clickable {
+  cursor: pointer;
+}
+
+.standard-link {
+  text-decoration: none;
+}
+
+.standard-link:hover {
+  color: rgb(172, 169, 169);
+}
+
 .link:hover {
   animation: 1s;
   animation-name: fadein;
@@ -63,12 +75,13 @@ body {
   padding: 20px;
   display: inline;
   position: relative;
-  font-size: 35px;
+  font-size: 30px;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  /* border-bottom: 2px solid transparent; */
 }
 
 .header {
@@ -99,6 +112,10 @@ body {
   font-weight: bold;
 }
 
+.text-is-bigger {
+  font-size: 2em;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -127,6 +144,10 @@ body {
 #bio-pic {
   width: 450px;
   height: auto;
+}
+
+.is-hidden {
+  display: none;
 }
 
 .contact-img {
