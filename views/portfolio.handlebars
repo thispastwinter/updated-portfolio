@@ -1,0 +1,22 @@
+<div class="grid">
+  <div class="grid-cell-md">
+    <h1 class="uppercase-text bottom-margin">My Portfolio</h1>
+      <hr class="divider bottom-margin">
+      <div class="bottom-margin">
+        <h3 class="centered-text important">Current and Past Projects.</h3>
+      </div>
+      <div class="">
+    {{#each allProjects}}
+    <a id="{{id}}" data-path="../assets/images{{imgpath}}" class="standard-link is-clickable important projects" href="/portfolio/{{id}}">
+      <h3>{{name}} -</h3>
+      <h5 class="bottom-margin">{{description}}</h5>
+    </a>
+    {{/each}}
+    </div>
+  </div>
+  <div class="grid-cell-md is-centered">
+    <div id="hover-img" class="is-centered">
+      <img width="450" src="../assets/images/bjtattoo.png">
+    </div>
+  </div>
+</div>

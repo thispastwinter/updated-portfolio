@@ -1,0 +1,26 @@
+{{#each projects}}
+<div class="grid">
+  <div class="grid-cell-md">
+    <h1 class="uppercase-text bottom-margin">{{name}}</h1>
+    <hr class="divider bottom-margin">
+    <div class="bottom-margin">
+      <h3 class="centered-text important">{{description}}</h3>
+    </div>
+    <div class="important indent-text">
+      <p class="bottom-margin">{{info}}{{info}}</p>
+      </div>
+      <div class="centered-text">
+        <a class="standard-link important" href="{{url}}" target="_blank">
+          <h3>{{name}} - Github</h3>
+        </a>
+      </div>
+    </div>
+
+
+  <div class="grid-cell-md is-centered">
+    <div id="hover-img" class="is-centered">
+      <img width="450" src="../assets/images{{imgpath}}">
+    </div>
+  </div>
+</div>
+{{/each}}
