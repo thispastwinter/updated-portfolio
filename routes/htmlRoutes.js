@@ -5,9 +5,22 @@ const app = express();
 
 module.exports = function (app) {
 
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-  })
+  // app.get('/', (req, res) => {
+  //   res.sendFile(path.join(__dirname, "../public/index.html"));
+  // })
+
+  app.get('/', async (req, res) => {
+    try {
+      let allProjects = await db.Projects.findAll({});
+      res.render('index', {
+        allProjects
+      });
+    } catch (err) {
+      res.render('500', {
+        layout: 'main'
+      });
+    }
+  });
 
   app.get('/portfolio', async (req, res) => {
     try {
@@ -29,8 +42,10 @@ module.exports = function (app) {
           id: req.params.id
         }
       });
+      let allProjects = await db.Projects.findAll({});
       res.render('projects', {
         projects,
+        allProjects
       });
     } catch (err) {
       res.render('500', {
