@@ -3,6 +3,8 @@ const app = express();
 const path = require('path');
 const exphbs = require('express-handlebars');
 const db = require('./models');
+const helmet = require('helmet');
+const morgan = require('morgan');
 
 // Handlebars
 app.engine(
@@ -12,6 +14,17 @@ app.engine(
   })
 );
 app.set('view engine', 'handlebars');
+
+app.use(helmet());
+app.use(morgan((tokens, req, res) => [
+  tokens.method(req, res),
+  tokens.url(req, res),
+  tokens.status(req, res),
+  tokens.res(req, res, 'content-length'), '-',
+  tokens['response-time'](req, res), 'ms',
+].join(' ')));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
