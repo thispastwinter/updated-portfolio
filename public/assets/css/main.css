@@ -106,6 +106,10 @@ body {
   border: 2px rgb(58, 58, 58) solid;
 }
 
+.top-margin {
+  margin-top: 60px;
+}
+
 .bottom-margin {
   margin-bottom: 20px;
 }

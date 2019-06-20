@@ -32,14 +32,14 @@
   padding-left: var(--grid-gutter);
 }
 
-.grid-cell-sm {
-  width: 25%;
+.grid-cell-md {
+  width: 50%;
   padding-right: var(--grid-gutter);
   padding-left: var(--grid-gutter);
 }
 
-.grid-cell-md {
-  width: 50%;
+.grid-cell-sm {
+  width: 25%;
   padding-right: var(--grid-gutter);
   padding-left: var(--grid-gutter);
 }
