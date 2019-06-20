@@ -62,8 +62,17 @@ body {
   text-decoration: none;
 }
 
+.standard-link-alternate {
+  text-decoration: none;
+  color: #628CC0;
+}
+
 .standard-link:hover {
   color: rgb(172, 169, 169);
+}
+
+.standard-link-alternate:hover {
+  color: rgb(110, 148, 194);
 }
 
 .link:hover {
@@ -103,6 +112,10 @@ body {
 
 .important {
   color: gray;
+}
+
+.important-alternate {
+  color: #628CC0;
 }
 
 .indent-text {
@@ -223,6 +236,11 @@ body {
     margin: 0 auto;
     width: 100%;
   }
+
+  .is-desktop {
+    display: none;
+  }
+
   #banner-text {
     font-size: 50px;
   }
