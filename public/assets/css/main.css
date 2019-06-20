@@ -218,6 +218,7 @@ body {
 }
 
 #banner-text {
+  line-height: 10rem;
   font-family: 'Bungee-Shade';
   font-size: 60px;
   color: white;
@@ -254,7 +255,7 @@ body {
   }
 
   #banner-text {
-    font-size: 50px;
+    font-size: 30px;
   }
   .contact-desktop {
     height: 450px;
