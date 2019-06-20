@@ -85,7 +85,7 @@ body {
   padding: 20px;
   display: inline;
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -110,8 +110,16 @@ body {
   margin-top: 60px;
 }
 
+.top-margin-bigger {
+  margin-top: 80px;
+}
+
 .bottom-margin {
   margin-bottom: 20px;
+}
+
+.bottom-margin-bigger {
+  margin-bottom: 40px;
 }
 
 .important {
