@@ -1,10 +1,220 @@
-/* @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap'); */
+/**
+
+===========================================
+                 Imports
+===========================================
+
+**/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 @font-face {
 font-family: 'Bungee-Shade';
 src: url('../fonts/Bungee-Shade.otf');
 }
+
+/**
+
+===========================================
+      Grid - Created by Justin Klaas
+===========================================
+
+**/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --grid-gutter: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(var(--grid-gutter) * .25);
+  margin-left: calc(var(--grid-gutter) * .25);
+  margin-bottom: calc(var(--grid-gutter) * 1);
+}
+
+.grid-center {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(var(--grid-gutter) * 1);
+  margin-left: calc(var(--grid-gutter) * 1);
+}
+
+.grid-cell-lg {
+  width: 100%;
+  margin-bottom: var(--grid-gutter);
+  padding-right: var(--grid-gutter);
+  padding-left: var(--grid-gutter);
+}
+
+.grid-cell-md {
+  width: 50%;
+  padding-right: var(--grid-gutter);
+  padding-left: var(--grid-gutter);
+}
+
+.grid-cell-sm {
+  width: 25%;
+  padding-right: var(--grid-gutter);
+  padding-left: var(--grid-gutter);
+}
+
+.grid-cell-sm,
+.grid-cell-md,
+.grid-cell-lg {
+  font-family: 'Roboto';
+}
+
+.is-spaced {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.is-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered-item {
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-cell-sm {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .grid-cell-md {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+/**
+
+===========================================
+      Cards - Created by Justin Klaas
+===========================================
+
+**/
+
+.hero {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/**
+
+===========================================
+     Buttons - Created by Justin Klaas
+===========================================
+
+**/
+
+.button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 0px;
+  font-family: 'Roboto';
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #628CC0;
+  box-shadow: 0 2.5px 2.5px rgba(0,0,0,0.19), 0 1.5px 1.5px rgba(0,0,0,0.23);
+}
+
+.button:hover {
+  background-color: rgb(110, 148, 194);
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+/**
+
+===========================================
+      Forms - Created by Justin Klaas
+===========================================
+
+**/
+
+.input {
+  padding: 20px;
+}
+
+.input-lg {
+  height: 40px;  
+  width: 100%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.input-md {
+  height: 40px;  
+  width: 50%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
+}
+
+.input-sm {
+  height: 40px;  
+  width: 25%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
+}
+
+.input-lg:focus {
+    border-color: #628CC0;
+}
+
+.input-lg::placeholder {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/**
+
+===========================================
+      Main - Created by Justin Klaas
+===========================================
+
+**/
 
 .body-wrapper {
   max-width: 960px;
@@ -137,6 +347,10 @@ src: url('../fonts/Bungee-Shade.otf');
 
 .important {
   color: gray;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .important-alternate {
@@ -292,16 +506,21 @@ src: url('../fonts/Bungee-Shade.otf');
   .desktop-nav {
     display: none;
   }
+
   .mobile-nav {
     display: flex;
   }
+  
   .mobile-div {
     display: block;
   }
+
   .footer {
     display: none;
   }
+
   #bio-pic, #gallery-img {
     width: 100%;
   }
+
 }
