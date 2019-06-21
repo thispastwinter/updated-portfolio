@@ -269,7 +269,8 @@ src: url('../fonts/Bungee-Shade.otf');
   }
 
   #banner-text {
-    font-size: 35px;
+    line-height: 5rem;
+    font-size: 50px;
   }
 
   .header {
