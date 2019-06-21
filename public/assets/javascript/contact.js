@@ -8,6 +8,11 @@ const modalTrigger = (context, response) => {
   modal.style.display = 'block';
   passOrFail.innerHTML = context;
   paragraph.innerHTML = response;
+  window.onclick = (event) => {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
 };
 
 submit.addEventListener('click', () => {
@@ -16,11 +21,6 @@ submit.addEventListener('click', () => {
   let message = document.getElementById('message').value;
   if (name === '' || email === '' || message === '') {
     modalTrigger('Whoops!<br><h3><i class="fas fa-bomb"></i></h3>', 'You must fill out every field.');
-    window.onclick = (event) => {
-      if (event.target == modal) {
-        modal.style.display = 'none';
-      }
-    }
   } else {
     submit.innerHTML = '<i class="fas fa-spin fa-circle-notch"></i>';
     console.log(name, email, message);
@@ -36,20 +36,10 @@ submit.addEventListener('click', () => {
         name = '';
         email = '';
         message = '';
-        window.onclick = (event) => {
-          if (event.target == modal) {
-            modal.style.display = 'none';
-          }
-        }
       } else if (response.data === 'invalid') {
         modalTrigger('Uh-Oh!<br><h3><i class="fas fa-bomb"></i></h3>', 'We apologize, but that appears to be an invalid email.');
       } else {
         modalTrigger('Uh-Oh!<br><h1><i class="fas fa-bomb"></i></h1>', 'We apologize, but your message can not be sent at this time!');
-        window.onclick = (event) => {
-          if (event.target == modal) {
-            modal.style.display = 'none';
-          }
-        }
       }
     }).catch(function (err) {
       console.log(err);
