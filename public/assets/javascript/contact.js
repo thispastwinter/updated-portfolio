@@ -28,11 +28,11 @@ submit.addEventListener('click', () => {
       name: name,
       email: email,
       message: message
-    }).then(function (response) {
+    }).then((response) => {
       console.log(response);
       submit.innerHTML = 'Submit'
       if (response.data === 'success') {
-        modalTrigger('Great Job!<br><h3><i class="far fa-thumbs-up"></i></h3>', `Thanks ${name}, your message has been sent.`)
+        modalTrigger('Great Job!<br><h3><i class="far fa-thumbs-up"></i></h3>', `Thanks ${name}, your message has been sent.`);
         name = '';
         email = '';
         message = '';
@@ -41,7 +41,7 @@ submit.addEventListener('click', () => {
       } else {
         modalTrigger('Uh-Oh!<br><h1><i class="fas fa-bomb"></i></h1>', 'We apologize, but your message can not be sent at this time!');
       }
-    }).catch(function (err) {
+    }).catch((err) => {
       console.log(err);
     })
   }

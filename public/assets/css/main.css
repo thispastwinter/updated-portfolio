@@ -6,9 +6,17 @@ font-family: 'Bungee-Shade';
 src: url('../fonts/Bungee-Shade.otf');
 }
 
-body {
+.body-wrapper {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.sticky {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
 }
 
 #modal {
@@ -42,10 +50,14 @@ body {
   from {
     border-color: rgba(158, 158, 158, 0.3);
     background-color: none;
+    color: rgb(58, 58, 58);
+    border: 2px solid rgb(58, 58, 58);
   }
   to {
     border-color: rgb(255, 255, 255);
     background-color: rgba(158, 158, 158, 0.3);
+    color: white;
+    border: 2px solid white;
   }
 }
 
@@ -88,8 +100,8 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
-  border: 2px solid transparent;
+  color: rgb(58, 58, 58);
+  border: 2px solid rgb(58, 58, 58);
   border-radius: 3px;
   /* border-bottom: 2px solid transparent; */
 }
@@ -98,8 +110,9 @@ body {
   background: url(../images/skyline.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  height: 500px;
+  background-position: top;
+  color: white;
+  height: 1000px;
 }
 
 .divider {
@@ -220,8 +233,9 @@ body {
 #banner-text {
   line-height: 10rem;
   font-family: 'Bungee-Shade';
-  font-size: 60px;
+  font-size: 150px;
   color: white;
+  z-index: 1;
 }
 
 .centered-text {
@@ -257,13 +271,23 @@ body {
   #banner-text {
     font-size: 35px;
   }
+
+  .header {
+    height: 500px;
+  }
   .contact-desktop {
     height: 450px;
     width: 100%;
   }
   .nav-links {
     font-size: 20px;
+    border: none;
   }
+
+  .link:hover {
+    animation: none;
+  }
+
   .desktop-nav {
     display: none;
   }

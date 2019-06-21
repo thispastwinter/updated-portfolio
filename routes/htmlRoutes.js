@@ -54,8 +54,12 @@ module.exports = function (app) {
     }
   });
 
+  // app.get('/contact', (req, res) => {
+  //   res.sendFile(path.join(__dirname, "../public/contact.html"));
+  // });
+
   app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/contact.html"));
-  });
+    res.render('info');
+  })
 
 }
