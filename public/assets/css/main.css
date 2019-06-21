@@ -16,7 +16,6 @@ src: url('../fonts/Bungee-Shade.otf');
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   align-items: center;
 }
 
@@ -234,7 +233,7 @@ src: url('../fonts/Bungee-Shade.otf');
 #banner-text {
   line-height: 10rem;
   font-family: 'Bungee-Shade';
-  font-size: 60px;
+  font-size: 150px;
   color: white;
   z-index: 1;
 }
@@ -271,6 +270,10 @@ src: url('../fonts/Bungee-Shade.otf');
 
   #banner-text {
     font-size: 35px;
+  }
+
+  .header {
+    height: 500px;
   }
   .contact-desktop {
     height: 450px;

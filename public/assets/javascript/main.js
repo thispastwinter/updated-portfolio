@@ -24,12 +24,10 @@ function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add('sticky');
     for(let i=0; i < navLinks.length; i++) {
-      navLinks[i].classList.remove('nav-links');
-      navLinks[i].classList.remove('link');
       navLinks[i].style.color = 'black';
       navLinks[i].style.textDecoration = 'none';
     }
-    navbar.style.backgroundColor = 'rgba(117, 117, 117, 0.3)';
+    navbar.style.backgroundColor = 'rgba(110, 148, 194, 0.8)';
     navbar.style.height = '100px';
     navbar.style.fontSize = '20px';
   } else {
