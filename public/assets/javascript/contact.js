@@ -13,6 +13,9 @@ const modalTrigger = (context, response) => {
       modal.style.display = 'none';
     }
   }
+  name.value = '';
+  email.value = '';
+  message.value = '';
 };
 
 submit.addEventListener('click', () => {
@@ -33,9 +36,6 @@ submit.addEventListener('click', () => {
       submit.innerHTML = 'Submit'
       if (response.data === 'success') {
         modalTrigger('Great Job!<br><h3><i class="far fa-thumbs-up"></i></h3>', `Thanks ${name}, your message has been sent.`);
-        name = '';
-        email = '';
-        message = '';
       } else if (response.data === 'invalid') {
         modalTrigger('Uh-Oh!<br><h3><i class="fas fa-bomb"></i></h3>', 'We apologize, but that appears to be an invalid email.');
       } else {

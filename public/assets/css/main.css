@@ -460,6 +460,12 @@ src: url('../fonts/Bungee-Shade.otf');
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 1000px) {
+  #banner-text {
+    font-size: 175px;
+  }
+}
+
 @media only screen and (min-width: 701px) {
   .bio-mobile {
     display: none;
