@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     info: {
-      type: DataTypes.STRING,
+      type: DataTypes.LONGTEXT,
       allowNull: false
     },
     imgpath: {
