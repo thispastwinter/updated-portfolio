@@ -16,7 +16,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    url: {
+    giturl: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    heroku: {
       type: DataTypes.STRING,
       allowNull: false
     }
