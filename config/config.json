@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "enjoii189",
+    "password": "",
     "database": "portfoliodb",
     "host": "localhost",
     "dialect": "mysql"
