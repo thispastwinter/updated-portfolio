@@ -9,13 +9,19 @@
     </div>
     <div class="important indent-text">
       <p class="bottom-margin">{{info}}</p>
-      </div>
-      <div class="centered-text">
-        <a class="standard-link important" href="{{url}}" target="_blank">
-          <h3>{{name}} - Github</h3>
-        </a>
-      </div>
     </div>
+    <div class="centered-text">
+      <a class="standard-link important" href="{{giturl}}" target="_blank">
+        <h3>{{name}} - Github</h3>
+      </a>
+      {{#if projects.heroku}}
+      <a class="standard-link important" href="{{heroku}}" target="_blank">
+        <h3>{{name}} - Heroku</h3>
+      </a>
+      {{else}}
+      {{/if}}
+    </div>
+  </div>
   <div class="grid-cell-md is-centered">
     <div id="hover-img" class="is-centered">
       <img id="gallery-img" src="../assets/images/{{imgpath}}">
