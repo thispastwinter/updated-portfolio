@@ -48,6 +48,7 @@ module.exports = function (app) {
         allProjects
       });
     } catch (err) {
+      console.log('Unable to connect to database!')
       res.render('500', {
         layout: 'main'
       });

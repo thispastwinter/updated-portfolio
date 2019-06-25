@@ -1,27 +1,62 @@
-<div class="grid">
-  <div class="grid-cell-md">
-    <h1 class="uppercase-text bottom-margin">Who Am I?</h1>
-    <hr class="divider bottom-margin">
-    <div class="bottom-margin">
-      <h3 class="centered-text important">A full-stack developer ready to make your vision come to life.</h3>
+{{>main-nav}}
+<div class="body-wrapper">
+  <div class="grid">
+    <div class="grid-cell-md">
+      <h1 class="uppercase-text bottom-margin">Who Am I?</h1>
+      <hr class="divider bottom-margin">
+      <div class="bottom-margin">
+        <h3 class="centered-text important">A full-stack developer ready to make your vision come to life.</h3>
+      </div>
+      <p class="indent-text important bottom-margin">
+        I am a full-stack developer ready to make your vision come to life. I have always had a passion for creating
+        things. Traditionally that's shown itself in my music and other artistic endeavors, but I have also found
+        ways to implement creativity into my life as a programmer.</p>
+      <p class="indent-text important bottom-margin">
+        My current projects intersect my current passions. Presently I'm building an app that will <a
+          class="standard-link important underline" href="/portfolio/2">help bars convert single serving
+          cocktails into larger batches</a>. Most recently I worked on a group project where we built a <a
+          class="standard-link important underline" href="/portfolio/1">white label</a> site
+        to be utilized by businesses like tattoo parlors. The site
+        has a pre-designed template and uses Google Calender's api for booking.</p>
+      <p class="indent-text important bottom-margin-bigger">I love styling web pages; this page is a
+        testament to that. All components including buttons, forms,
+        and the grid itself are my own design.
+      </p>
+      <div class="is-desktop">
+        <h4 class="important centered-text bottom-margin">Technologies in which I am proficient:</h4>
+        <ul class="no-list-style important centered-text is-spaced">
+          <li><i class="fab fa-js-square"></i> Javascript</li>
+          <li><i class="fab fa-node-js"></i></i> Node</li>
+          <li><i class="fas fa-database"></i> MySQL</li>
+          <li><i class="fab fa-css3-alt"></i> CSS 3</li>
+        </ul>
+      </div>
     </div>
-    <p class="indent-text important bottom-margin">
-      I am a full-stack developer ready to make your vision come to life. I have always had a passion for creating
-      things. Traditionally that's shown itself in my music and other artistic endeavors, but I have also found
-      ways to implement creativity into my life as a programmer.</p>
-    <p class="indent-text important bottom-margin">
-      My current projects intersect my current passions. Presently I'm building an app that will <a
-        class="standard-link important underline" href="/portfolio/2">help bars convert single serving
-        cocktails into larger batches</a>. Most recently I worked on a group project where we built a <a
-        class="standard-link important underline" href="/portfolio/1">white label</a> site
-      to be utilized by businesses like tattoo parlors. The site
-      has a pre-designed template and uses Google Calender's api for booking.</p>
-    <p class="indent-text important bottom-margin-bigger">I love styling web pages; this page is a
-      testament to that. All components including buttons, forms,
-      and the grid itself are my own design.
-    </p>
-    <div class="is-desktop">
-      <h4 class="important centered-text bottom-margin">Technologies in which I am proficient:</h4>
+    <div class="grid-cell-md is-centered">
+      <img id="bio-pic" class="" src="./assets/images/profile-img.jpg" alt="">
+    </div>
+  </div>
+  <div class="grid mobile-div">
+    <div class="grid-cell-lg">
+      <h1 class="uppercase-text bottom-margin" id="portfolio">Portfolio</h1>
+      <hr class="divider">
+    </div>
+    <div class="grid-cell-lg">
+      <h3 class="centered-text important">Current and Past Projects</h3>
+    </div>
+    <div class="grid-cell-lg">
+      <ul class="no-list-style important centered-text">
+        {{#each allProjects}}
+        <a id="{{id}}" class="standard-link important is-clickable" href="/portfolio/{{id}}">
+          <p>{{name}}</p><br>
+        </a>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="grid-cell-lg">
+      <h4 class="important centered-text">Technologies in which I am proficient:</h4>
+    </div>
+    <div class="grid-cell-lg bottom-margin-bigger">
       <ul class="no-list-style important centered-text is-spaced">
         <li><i class="fab fa-js-square"></i> Javascript</li>
         <li><i class="fab fa-node-js"></i></i> Node</li>
@@ -30,37 +65,38 @@
       </ul>
     </div>
   </div>
-  <div class="grid-cell-md is-centered">
-    <img id="bio-pic" class="" src="./assets/images/profile-img.jpg" alt="">
+  <div class="grid is-desktop top-margin">
+    <div class="grid-cell-md is-centered">
+      <div id="hover-img" class="is-centered">
+        <img id="gallery-img" src="../assets/images/bjtattoo.png">
+      </div>
+    </div>
+    <div class="grid-cell-md">
+      <h1 class="uppercase-text bottom-margin" id="portfolio-desktop">Portfolio</h1>
+      <hr class="divider bottom-margin">
+      <div class="bottom-margin">
+        <h3 class="centered-text important">Current and Past Projects.</h3>
+      </div>
+      <div class="">
+        {{#each allProjects}}
+        <a id="{{id}}" data-path="../assets/images/{{imgpath}}" class="standard-link is-clickable important projects"
+          href="/portfolio/{{id}}">
+          <h3 class="">{{name}}</h3>
+          <h5 class="bottom-margin">{{description}}</h5>
+        </a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="grid">
+    {{>contact-form}}
+    <div class="grid-cell-md is-centered contact-img contact-desktop is-desktop">
+      <div id="speech-bubble">
+        <div id="bubble-caption">
+          <i class="fas fa-comment"></i>
+          <div id="bubble-text" class="text-is-strong">Thanks<br>for<br>considering me!</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="grid mobile-div">
-  <div class="grid-cell-lg">
-    <h1 class="uppercase-text bottom-margin" id="portfolio">Portfolio</h1>
-    <hr class="divider">
-  </div>
-  <div class="grid-cell-lg">
-    <h3 class="centered-text important">Current and Past Projects</h3>
-  </div>
-  <div class="grid-cell-lg">
-    <ul class="no-list-style important centered-text">
-      {{#each allProjects}}
-      <a id="{{id}}" class="standard-link important is-clickable" href="/portfolio/{{id}}">
-        <p>{{name}}</p><br>
-      </a>
-      {{/each}}
-    </ul>
-  </div>
-  <div class="grid-cell-lg">
-    <h4 class="important centered-text">Technologies in which I am proficient:</h4>
-  </div>
-  <div class="grid-cell-lg bottom-margin-bigger">
-    <ul class="no-list-style important centered-text is-spaced">
-      <li><i class="fab fa-js-square"></i> Javascript</li>
-      <li><i class="fab fa-node-js"></i></i> Node</li>
-      <li><i class="fas fa-database"></i> MySQL</li>
-      <li><i class="fab fa-css3-alt"></i> CSS 3</li>
-    </ul>
-  </div>
-</div>
-{{>contact-form}}

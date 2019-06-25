@@ -1,4 +1,5 @@
 {{>project-nav}}
+<div class="body-wrapper">
 {{#each projects}}
 <div class="grid">
   <div class="grid-cell-md" id="project-name">
@@ -24,9 +25,12 @@
   </div>
   <div class="grid-cell-md is-centered">
     <div id="hover-img" class="is-centered">
-      <img id="gallery-img" src="../assets/images/{{imgpath}}">
+      <img id="gallery-img" src="/assets/images/{{imgpath}}">
     </div>
   </div>
 </div>
 {{/each}}
+</div>
+<div class="mobile-div">
 {{>contact-form}}
+</div>
