@@ -1,106 +1,157 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html lang="us-en">
 
- <head>
-   <!--Font Awesome-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-   <!--Import Google Icon Font-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--Google Fonts-->
-   <link href="https://fonts.googleapis.com/css?family=Raleway|Bungee+Shade" rel="stylesheet">
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <!--Custom Stylesheet-->
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <!--Let browser know website is optimized for mobile-->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>About Me</title>
- </head>
+<head>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!--Devicon-->
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!--Custom Stylesheet-->
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/cards.css">
+  <link rel="stylesheet" href="./assets/css/buttons.css">
+  <link rel="stylesheet" href="./assets/css/forms.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>About Me</title>
+</head>
 
- <body>
-   <div class="row header content">
-     <div class="col s12">
-       <div class="banner">
-         <div id="banner-text">
-           <div id="first-name">
-             <p>Justin</p>
-           </div>
-           <div id="last-name">
-             <p>Klaas</p>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col s6 l6 social">
-         <div>
-           <a class="nav-link" href="https://www.linkedin.com/in/justin-klaas-33a04085/"><i
-               class="fab fa-linkedin"></i></a>
-           <a class="nav-link" href="https://github.com/thispastwinter"><i class="fab fa-github-square"></i></a>
-         </div>
-       </div>
-       <div class="col s6 l6">
-         <navbar>
-           <ul>
-             <li><a class="nav-link" href="./index.html">ABOUT ME</a></li>
-             <li><a class="nav-link" href="./portfolio.html">PORTFOLIO</a></li>
-             <li><a class="nav-link" href="./contact.html">CONTACT</a></li>
-           </ul>
-         </navbar>
-       </div>
-     </div>
-   </div>
-   <div class="row main-content">
-     <div class="row">
-       <div class="col auto">
-         <h3>About Me</h3>
-       </div>
-     </div>
-     <div class="row bio">
-       <div class="col s6">
-         <p>
-           I'm currently a student at the University of Kansas Edwards Campus. I'm studying full-stack web developement
-           through KU's Coding Bootcamp. My specialties are in front end web development, with particular interest in CSS. 
-           While not necessarily one of my stongpoints, I do have a very good understanding of javascript, especially as it
-           pertains to dynamically generated content. I also have a good grasp on API's and other databases, including Firebase.
-         </p>
-       </div>
-       <div class="col s6">
-         <p>
-           My hope with those who stumble across this page is a sense of simplicity. My focus is on creating web pages that 
-           are functional while also maintaining minimal design. This webpage is a testament to that. It's minimal, but also
-           not bland. It also maintains its own identity, and while it utilizes some of materializes css framework, it isn't 
-           a "cookie cutter" layout. Please feel free to look through my portfolio while you're here, and don't hesitate to 
-           contact me!
-         </p>
-       </div>
-     </div>
-     <div class="row bio-mobile">
-       <div class="col s12">
-         <p>
-           I'm currently a student at the University of Kansas Edwards Campus. I'm studying full-stack web developement
-           through KU's Coding Bootcamp. My specialties are in front end web development, with particular interest in CSS. 
-           While not necessarily one of my stongpoints, I do have a very good understanding of javascript, especially as it
-           pertains to dynamically generated content. I also have a good grasp on API's and other databases, including Firebase.
-           My hope with those who stumble across this page is a sense of simplicity. My focus is on creating web pages that 
-           are functional while also maintaining minimal design. This webpage is a testament to that. It's minimal, but also
-           not bland. It also maintains its own identity, and while it utilizes some of materializes css framework, it isn't 
-           a "cookie cutter" layout. Please feel free to look through my portfolio while you're here, and don't hesitate to 
-           contact me!
-         </p>
-       </div>
-     </div>
-   </div>
-   <!--jQuery Google CDN-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-   <!--Materialize Min Javascript-->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-   </script>
-   <!--Custom Javascript-->
-   <script src="./assets/javascript/main.js"></script>
- </body>
+<body>
+  <div id="modal" class="grid">
+    <div class="modal-close" type="button">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="modal-content grid-cell-lg centered-text card">
+      <h1 id="pass-or-fail"></h1>
+      <p id="info"></p>
+    </div>
+  </div>
+  <div class="grid is-centered">
+    <div class="grid-cell-lg header card">
+      <div id="banner-text">
+        Justin Klaas
+      </div>
+      <div class="grid-cell-lg is-spaced desktop-nav">
+        <a class="nav-links link" href="/">Home</a>
+        <a class="nav-links link" href="/portfolio">Portfolio</a>
+        <a class="nav-links link" href="/contact">Contact</a>
+      </div>
+      <div class="grid-cell-lg is-spaced mobile-nav">
+        <a class="nav-links link" href="/">Home</a>
+        <a class="nav-links link" href="#portfolio">Portfolio</a>
+        <a class="nav-links link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="grid-cell-md">
+      <h1 class="uppercase-text bottom-margin">Who Am I?</h1>
+      <hr class="divider bottom-margin">
+      <div class="bottom-margin">
+        <h3 class="centered-text important">A full-stack developer ready to make your vision come to life.</h3>
+      </div>
+      <p class="indent-text important">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa debitis ducimus
+        tempore cumque unde delectus! Magni iste illo voluptatum ipsa? Quia earum officiis alias delectus odio totam
+        dicta consectetur ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, minus! Provident, ex? Ut
+        est accusantium hic praesentium itaque iste, voluptates voluptatem ipsam culpa tempore velit facilis, ratione
+        eum pariatur dolor.</p>
+      <p class="indent-text important">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, ratione porro ipsa fugiat perferendis fuga
+        fugit sunt rerum ipsam doloribus praesentium vero tempore, natus incidunt nulla tempora sed impedit optio. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis eum id eos omnis consequatur aut numquam
+        quaerat quam! Nobis quidem praesentium atque et quaerat dolore aspernatur, beatae fuga quo!
+      </p>
+    </div>
+    <div class="grid-cell-md is-centered">
+      <img id="bio-pic" class="" src="./assets/images/profile-img.jpg" alt="">
+    </div>
+  </div>
+  <div class="grid">
+    <div class="grid-cell-lg is-centered uppercase important footer">
+      <br><br>
+      <div class="grid-cell-sm">
+        <h3>Like what you see?</h3>
+      </div>
+      <div class="grid-cell-sm is-centered">
+        <i class="fas fa-arrow-circle-right"></i>
+      </div>
+      <div class="grid-cell-sm is-centered">
+        <a class="standard-link important" href="/contact">
+          <h3>Contact Me</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="grid mobile-div">
+    <div class="grid-cell-lg">
+      <h1 class="uppercase-text bottom-margin" id="portfolio">Portfolio</h1>
+      <hr class="divider">
+    </div>
+    <div class="grid-cell-lg">
+      <h3 class="centered-text important">Current and Past Projects</h3>
+    </div>
+    <div class="grid-cell-lg">
+      <ul class="no-list-style important centered-text">
+        <a id = "portfolio1" class="standard-link important is-clickable">
+          <p>BJ's Tattoo Haven</p>
+        </a>
+        <a id = "portfolio2" class="standard-link important is-clickable">
+          <p>BJ's Tattoo Haven</p>
+        </a>
+        <a id = "portfolio3" class="standard-link important is-clickable">
+          <p>BJ's Tattoo Haven</p>
+        </a>
+        <a id = "portfolio4" class="standard-link important is-clickable">
+          <p>BJ's Tattoo Haven</p>
+        </a>
+      </ul>
+    </div>
+    <div class="grid-cell-lg">
+      <h4 class="important centered-text">Technologies in which I am proficient:</h4>
+    </div>
+    <div class="grid-cell-lg">
+      <ul class="no-list-style important centered-text">
+        <li><i class="fab fa-js-square"></i> Javascript</li>
+        <li><i class="fab fa-node-js"></i></i> Node</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+        <li><i class="fab fa-css3-alt"></i> CSS 3</li>
+        <!-- <li><i class="devicon-express-original-wordmark"></i></li>
+        <li><i class="devicon-express-original-wordmark"></i></li>
+        <li><i class="devicon-express-original-wordmark"></i></li> -->
+      </ul>
+    </div>
+  </div>
+  <div class="grid mobile-div">
+    <div class="grid-cell-lg">
+      <h1 class="uppercase-text bottom-margin" id="contact">Contact</h1>
+      <hr class="divider">
+    </div>
+    <div class="grid-cell-lg">
+      <h3 class="centered-text important">Drop me a line and let's create something together!</h3>
+    </div>
+    <div class="grid-cell-lg">
+      <div class="input">
+        <input class="input-lg" type="text" placeholder="Name" id="name">
+      </div>
+      <div class="input">
+        <input class="input-lg" type="email" placeholder="Email" id="email">
+      </div>
+      <div class="input">
+        <input class="input-lg" type="text" placeholder="Message" id="message">
+      </div>
+      <br>
+      <div class="grid is-centered">
+        <a class="button submit">Submit</a>
+      </div>
+    </div>
+  </div>
+  <!--Custom Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./assets/javascript/main.js"></script>
+  <script src="./assets/javascript/contact.js"></script>
+</body>
 
- </html>
+</html>

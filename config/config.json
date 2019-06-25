@@ -1,16 +1,16 @@
 {
-  "development": {
+  "test": {
     "username": "root",
     "password": "",
     "database": "portfoliodb",
     "host": "localhost",
     "dialect": "mysql"
   },
-  "test": {
-    "username": "root",
+  "development": {
+    "username": "",
     "password": "",
-    "database": "testdb",
-    "host": "localhost",
+    "database": "",
+    "host": "",
     "dialect": "mysql",
     "logging": false
   },

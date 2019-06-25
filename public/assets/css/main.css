@@ -8,9 +8,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 @font-face {
-font-family: 'Bungee-Shade';
-src: url('../fonts/Bungee-Shade.otf');
+  font-family: 'Bungee-Shade';
+  src: url('../fonts/Bungee-Shade.otf');
 }
 
 /**
@@ -89,15 +90,16 @@ src: url('../fonts/Bungee-Shade.otf');
 }
 
 @media only screen and (max-width: 700px) {
-    .grid-cell-sm {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .grid-cell-md {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+  .grid-cell-sm {
+    width: 100%;
+    margin-bottom: 20px;
   }
+
+  .grid-cell-md {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 /**
 
@@ -108,12 +110,12 @@ src: url('../fonts/Bungee-Shade.otf');
 **/
 
 .hero {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 0px 0px 5px 5px;
 }
 
 .card {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /**
@@ -134,7 +136,7 @@ src: url('../fonts/Bungee-Shade.otf');
   text-align: center;
   color: white;
   background-color: #628CC0;
-  box-shadow: 0 2.5px 2.5px rgba(0,0,0,0.19), 0 1.5px 1.5px rgba(0,0,0,0.23);
+  box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, 0.19), 0 1.5px 1.5px rgba(0, 0, 0, 0.23);
 }
 
 .button:hover {
@@ -158,7 +160,7 @@ src: url('../fonts/Bungee-Shade.otf');
 }
 
 .input-lg {
-  height: 40px;  
+  height: 40px;
   width: 100%;
   padding: 15px 0 15px 0;
   outline: none;
@@ -173,7 +175,7 @@ src: url('../fonts/Bungee-Shade.otf');
 }
 
 .input-md {
-  height: 40px;  
+  height: 40px;
   width: 50%;
   padding: 15px 0 15px 0;
   outline: none;
@@ -186,7 +188,7 @@ src: url('../fonts/Bungee-Shade.otf');
 }
 
 .input-sm {
-  height: 40px;  
+  height: 40px;
   width: 25%;
   padding: 15px 0 15px 0;
   outline: none;
@@ -199,7 +201,7 @@ src: url('../fonts/Bungee-Shade.otf');
 }
 
 .input-lg:focus {
-    border-color: #628CC0;
+  border-color: #628CC0;
 }
 
 .input-lg::placeholder {
@@ -227,14 +229,15 @@ src: url('../fonts/Bungee-Shade.otf');
   top: 0;
   left: 0;
   align-items: center;
+  z-index: 2;
 }
 
 #modal {
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   left: 0;
-  right: 0; 
+  right: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -263,6 +266,7 @@ src: url('../fonts/Bungee-Shade.otf');
     color: rgb(58, 58, 58);
     border: 2px solid rgb(58, 58, 58);
   }
+
   to {
     border-color: rgb(255, 255, 255);
     background-color: rgba(158, 158, 158, 0.3);
@@ -393,7 +397,8 @@ src: url('../fonts/Bungee-Shade.otf');
   list-style: none;
 }
 
-#bio-pic, #gallery-img {
+#bio-pic,
+#gallery-img {
   width: 450px;
   height: auto;
 }
@@ -452,6 +457,13 @@ src: url('../fonts/Bungee-Shade.otf');
   z-index: 1;
 }
 
+#mobile-nav-banner {
+  line-height: 5rem;
+  font-family: 'Bungee-Shade';
+  font-size: 50px;
+  color: black;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -470,9 +482,11 @@ src: url('../fonts/Bungee-Shade.otf');
   .bio-mobile {
     display: none;
   }
+
   .mobile-div {
     display: none;
   }
+
   .mobile-nav {
     display: none;
   }
@@ -496,12 +510,14 @@ src: url('../fonts/Bungee-Shade.otf');
   .header {
     height: 500px;
   }
+
   .contact-desktop {
     height: 450px;
     width: 100%;
   }
+
   .nav-links {
-    font-size: 20px;
+    font-size: 15px;
     border: none;
   }
 
@@ -516,16 +532,17 @@ src: url('../fonts/Bungee-Shade.otf');
   .mobile-nav {
     display: flex;
   }
-  
+
   .mobile-div {
-    display: block;
+    display: flex;
   }
 
   .footer {
     display: none;
   }
 
-  #bio-pic, #gallery-img {
+  #bio-pic,
+  #gallery-img {
     width: 100%;
   }
 
