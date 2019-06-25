@@ -519,7 +519,7 @@
   .nav-links {
     font-size: 1em;
     border: none;
-    text-transform: none;
+    padding: 10px;
   }
 
   .link:hover {
