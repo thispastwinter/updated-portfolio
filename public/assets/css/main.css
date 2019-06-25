@@ -517,9 +517,9 @@
   }
 
   .nav-links {
-    font-size: 15px;
+    font-size: 1em;
     border: none;
-    padding: 10px;
+    text-transform: none;
   }
 
   .link:hover {
